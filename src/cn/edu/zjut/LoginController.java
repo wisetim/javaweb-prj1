@@ -17,9 +17,11 @@ public class LoginController extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String username = request.getParameter("username");
         String password = request.getParameter("password");
+        String type = request.getParameter("type");
         UserBean user = new UserBean();
         user.setUsername(username);
         user.setPassword(password);
+        user.setType(type);
         if (checkUser(user)) {
             request.setAttribute("USER", user);
             request.getRequestDispatcher("/loginSuccess.jsp")
@@ -34,6 +36,8 @@ public class LoginController extends HttpServlet {
     }
 
     private boolean checkUser(UserBean user) {
-        return "zjut".equals(user.getUsername()) && "zjut".equals(user.getPassword());
+        return "zjut".equals(user.getUsername())
+                && "zjut".equals(user.getPassword())
+                && "admin".equals(user.getType());
     }
 }

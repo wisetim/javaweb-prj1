@@ -6,6 +6,7 @@ package cn.edu.zjut.model;
 public class UserBean {
     private String username;
     private String password;
+    private String type;
 
     public UserBean() {
     }
@@ -24,5 +25,13 @@ public class UserBean {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
     }
 }

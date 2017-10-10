@@ -24,6 +24,15 @@
                 <td><input type="password" name="password"></td>
             </tr>
             <tr>
+                <td>请选择用户类型：</td>
+                <td>
+                    <select name="type">
+                        <option value="user">普通用户</option>
+                        <option value="admin">管理员</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
                 <td colspan="2" align="center"><input type="submit" value="登录"></td>
             </tr>
         </table>
