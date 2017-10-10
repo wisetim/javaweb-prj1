@@ -1,5 +1,6 @@
 package cn.edu.zjut;
 
+import cn.edu.zjut.dao.UserDao;
 import cn.edu.zjut.model.UserBean;
 
 import javax.servlet.ServletException;
@@ -36,8 +37,7 @@ public class LoginController extends HttpServlet {
     }
 
     private boolean checkUser(UserBean user) {
-        return "zjut".equals(user.getUsername())
-                && "zjut".equals(user.getPassword())
-                && "admin".equals(user.getType());
+        UserDao dao = new UserDao();
+        return dao.searchUser(user);
     }
 }
