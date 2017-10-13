@@ -13,7 +13,9 @@
 <body>
 <div align="center">
     <h3>用户注册</h3>
+    <%--注册失败的消息--%>
     ${requestScope.regMsg}
+    <%--用户注册的表单--%>
     <form action="register" method="post">
         <table border="0">
             <tr>
