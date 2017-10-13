@@ -12,5 +12,6 @@
 </head>
 <body>
 <p align="center">登录失败，用户名或密码错误！</p>
+<div align="center"><a href="login.jsp">返回登录页面</a></div>
 </body>
 </html>

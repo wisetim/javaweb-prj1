@@ -12,5 +12,6 @@
 </head>
 <body>
 <p align="center">${requestScope.regMsg}</p>
+<div align="center"><a href="login.jsp">返回登录页面</a></div>
 </body>
 </html>

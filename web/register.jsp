@@ -9,6 +9,7 @@
 <html>
 <head>
     <title>用户注册页面</title>
+    <script type="text/javascript" src="check.js"></script>
 </head>
 <body>
 <div align="center">
@@ -16,15 +17,15 @@
     <%--注册失败的消息--%>
     ${requestScope.regMsg}
     <%--用户注册的表单--%>
-    <form action="register" method="post">
+    <form action="register" method="post" onsubmit="return checkForm()">
         <table border="0">
             <tr>
                 <td>用户名：</td>
-                <td><input type="text" name="username"></td>
+                <td><input type="text" name="username" id="username"></td>
             </tr>
             <tr>
                 <td>密码：</td>
-                <td><input type="password" name="password"></td>
+                <td><input type="password" name="password" id="password"></td>
             </tr>
             <tr>
                 <td><input type="submit" value="注册"></td>
