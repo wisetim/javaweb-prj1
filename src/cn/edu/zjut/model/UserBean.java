@@ -4,13 +4,15 @@ package cn.edu.zjut.model;
  * Created by a on 2017/10/10.
  */
 public class UserBean {
-    private String username;
-    private String password;
-    private String type;
+    private String username; //账号
+    private String password; //密码
+    private String type; //用户类型
 
+    //默认构造函数
     public UserBean() {
     }
 
+    //setter和getter方法
     public String getUsername() {
         return username;
     }

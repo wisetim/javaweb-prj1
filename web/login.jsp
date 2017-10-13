@@ -13,6 +13,7 @@
 <body>
 <div align="center">
     <h3>用户登录</h3>
+    <%--用户登录的表单--%>
     <form action="login" method="post">
         <table border="0">
             <tr>
